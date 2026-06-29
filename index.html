@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phurada's Portfolio</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 10%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #4a90e2;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #357abd;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        /* About Section */
+        .about-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-img {
+            background-color: #e0e0e0;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #777;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+            nav ul {
+                margin-top: 10px;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Phurada.</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Hi, I'm Phurada</h1>
+        <p>Welcome to my creative space. I design, build, and create amazing digital experiences.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hello! I'm Phurada, a passionate creator interested in web design, development, and digital art. I love turning complex problems into beautiful, simple, and intuitive designs. Take a look around to see some of my latest work!</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-img">Project Image Placeholder</div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A brief description of this awesome project. Explain what technologies you used and what goal you achieved.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">Project Image Placeholder</div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A brief description of this awesome project. Explain what technologies you used and what goal you achieved.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img">Project Image Placeholder</div>
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>A brief description of this awesome project. Explain what technologies you used and what goal you achieved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="about-content">
+                <p>If you'd like to collaborate on a project, ask a question, or just say hi, feel free to reach out via email!</p>
+                <p style="margin-top: 15px;"><strong>Email:</strong> phurada@example.com</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Phurada. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
